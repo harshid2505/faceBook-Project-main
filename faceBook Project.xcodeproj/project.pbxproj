@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		491A5DB02A6F8A100005539D /* createAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DAF2A6F8A100005539D /* createAccount.swift */; };
+		491A5DC92A7002E90005539D /* mobileNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DC82A7002E90005539D /* mobileNumber.swift */; };
+		491A5DCE2A70354F0005539D /* signupWithEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DCD2A70354F0005539D /* signupWithEmail.swift */; };
+		491A5DD02A70EF3F0005539D /* createPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DCF2A70EF3F0005539D /* createPassword.swift */; };
+		491A5DD52A7184A40005539D /* saveInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DD42A7184A40005539D /* saveInfo.swift */; };
+		491A5DD72A7188B10005539D /* TermsAndCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DD62A7188B10005539D /* TermsAndCondition.swift */; };
+		497625B12A7AA2EF0002588E /* saveLoginInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497625B02A7AA2EF0002588E /* saveLoginInfoPage.swift */; };
+		498342892A6EE4F000C6413F /* JoinFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498342882A6EE4F000C6413F /* JoinFacebook.swift */; };
+		6501E41E2A7B66A200CD522B /* genderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501E41D2A7B66A200CD522B /* genderTableViewCell.swift */; };
+		6507D79E2A8CB29900DF2CC0 /* messagerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6507D79D2A8CB29900DF2CC0 /* messagerPage.swift */; };
+		6507D7A02A8CBE7F00DF2CC0 /* searchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6507D79F2A8CBE7F00DF2CC0 /* searchPage.swift */; };
+		6507D7A22A8CC44900DF2CC0 /* searchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6507D7A12A8CC44900DF2CC0 /* searchTableViewCell.swift */; };
+		6507D7A42A8CD07300DF2CC0 /* searchTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6507D7A32A8CD07300DF2CC0 /* searchTableViewCell2.swift */; };
+		651FFBB32A84D7D200B33242 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FFBB22A84D7D200B33242 /* TabBarController.swift */; };
+		652524E52A9DD6490052C65D /* ShopPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652524E42A9DD6490052C65D /* ShopPage.swift */; };
+		652524E82A9DD7610052C65D /* shopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652524E72A9DD7610052C65D /* shopCollectionViewCell.swift */; };
+		652524EA2A9DDC1D0052C65D /* productSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652524E92A9DDC1D0052C65D /* productSearch.swift */; };
+		652524EC2A9DDE3C0052C65D /* productbuyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652524EB2A9DDE3C0052C65D /* productbuyTableViewCell.swift */; };
+		652524EE2A9DE1130052C65D /* selectedproductPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652524ED2A9DE1130052C65D /* selectedproductPage.swift */; };
+		652524F22A9DEB690052C65D /* menuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652524F12A9DEB690052C65D /* menuCollectionViewCell.swift */; };
+		65469D1F2AA0869600FA0F1B /* MenuPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652524F42A9DEB810052C65D /* MenuPage.swift */; };
+		655969652A7B98DB00C9F91E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 655969642A7B98DB00C9F91E /* GoogleService-Info.plist */; };
+		656BF2D32A8B4E1B00D0E1CF /* homeTableViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF2D22A8B4E1B00D0E1CF /* homeTableViewCell3.swift */; };
+		656BF2D52A8B53E000D0E1CF /* friendReqCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BF2D42A8B53E000D0E1CF /* friendReqCollectionViewCell.swift */; };
+		656DF25A2A7A5B32003A2044 /* forgetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656DF2592A7A5B32003A2044 /* forgetPage.swift */; };
+		6578E0632A7A4557009A27BC /* dateOfBirth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578E0622A7A4557009A27BC /* dateOfBirth.swift */; };
+		6578E0652A7A4A67009A27BC /* birthdayPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578E0642A7A4A67009A27BC /* birthdayPop.swift */; };
+		6578E0672A7A4DAF009A27BC /* genderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578E0662A7A4DAF009A27BC /* genderPage.swift */; };
+		65A17D282A8602160009D5F0 /* homeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A17D272A8602160009D5F0 /* homeTableViewCell.swift */; };
+		65A2ECCB2A8624AF00697A34 /* storyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A2ECCA2A8624AF00697A34 /* storyCollectionViewCell.swift */; };
+		65A2ECCD2A86333C00697A34 /* storyCollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A2ECCC2A86333C00697A34 /* storyCollectionViewCell2.swift */; };
+		65B1DE712A6CEE540076A401 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1DE702A6CEE540076A401 /* AppDelegate.swift */; };
+		65B1DE732A6CEE540076A401 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1DE722A6CEE540076A401 /* SceneDelegate.swift */; };
+		65B1DE752A6CEE540076A401 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1DE742A6CEE540076A401 /* ViewController.swift */; };
+		65B1DE782A6CEE540076A401 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B1DE762A6CEE540076A401 /* Main.storyboard */; };
+		65B1DE7A2A6CEE540076A401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B1DE792A6CEE540076A401 /* Assets.xcassets */; };
+		65B1DE7D2A6CEE540076A401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B1DE7B2A6CEE540076A401 /* LaunchScreen.storyboard */; };
+		65F7C1D02A8513BE00BBB7FB /* ReelPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7C1CF2A8513BE00BBB7FB /* ReelPage.swift */; };
+		65F7C1DA2A85154D00BBB7FB /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7C1D92A85154C00BBB7FB /* HomePage.swift */; };
+		65F7C1DC2A85169100BBB7FB /* postPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7C1DB2A85169100BBB7FB /* postPop.swift */; };
+		65F7C1DE2A851B1400BBB7FB /* postTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7C1DD2A851B1400BBB7FB /* postTableViewCell.swift */; };
+		65F897FA2A99EEB200F3751A /* FriendsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F897F92A99EEB200F3751A /* FriendsPage.swift */; };
+		65F898002A99F1A400F3751A /* friendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F897FF2A99F1A400F3751A /* friendsTableViewCell.swift */; };
+		65F898022A99FD8B00F3751A /* yourfriendsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F898012A99FD8B00F3751A /* yourfriendsPage.swift */; };
+		65F898042A99FFBC00F3751A /* searchfriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F898032A99FFBB00F3751A /* searchfriendsTableViewCell.swift */; };
+		65F898062A9A06C600F3751A /* findFriendsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F898052A9A06C600F3751A /* findFriendsPage.swift */; };
+		65F898092A9A07FE00F3751A /* NotificationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F898072A9A07FE00F3751A /* NotificationPage.swift */; };
+		65F8980A2A9A07FE00F3751A /* notificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F898082A9A07FE00F3751A /* notificationsTableViewCell.swift */; };
+		65FB54782A877DC5001793F5 /* homeTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FB54772A877DC5001793F5 /* homeTableViewCell2.swift */; };
+		DA748434D72637615D699F33 /* Pods_faceBook_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B152393A0F95763874CDA6D /* Pods_faceBook_Project.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		491A5DAF2A6F8A100005539D /* createAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccount.swift; sourceTree = "<group>"; };
+		491A5DC82A7002E90005539D /* mobileNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobileNumber.swift; sourceTree = "<group>"; };
+		491A5DCD2A70354F0005539D /* signupWithEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupWithEmail.swift; sourceTree = "<group>"; };
+		491A5DCF2A70EF3F0005539D /* createPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createPassword.swift; sourceTree = "<group>"; };
+		491A5DD42A7184A40005539D /* saveInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveInfo.swift; sourceTree = "<group>"; };
+		491A5DD62A7188B10005539D /* TermsAndCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndCondition.swift; sourceTree = "<group>"; };
+		497625B02A7AA2EF0002588E /* saveLoginInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveLoginInfoPage.swift; sourceTree = "<group>"; };
+		498342882A6EE4F000C6413F /* JoinFacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinFacebook.swift; sourceTree = "<group>"; };
+		4B152393A0F95763874CDA6D /* Pods_faceBook_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faceBook_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53DB3E327C1BD0C44CA10455 /* Pods-faceBook Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceBook Project.debug.xcconfig"; path = "Target Support Files/Pods-faceBook Project/Pods-faceBook Project.debug.xcconfig"; sourceTree = "<group>"; };
+		6501E41D2A7B66A200CD522B /* genderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = genderTableViewCell.swift; sourceTree = "<group>"; };
+		6507D79D2A8CB29900DF2CC0 /* messagerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messagerPage.swift; sourceTree = "<group>"; };
+		6507D79F2A8CBE7F00DF2CC0 /* searchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchPage.swift; sourceTree = "<group>"; };
+		6507D7A12A8CC44900DF2CC0 /* searchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchTableViewCell.swift; sourceTree = "<group>"; };
+		6507D7A32A8CD07300DF2CC0 /* searchTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchTableViewCell2.swift; sourceTree = "<group>"; };
+		651FFBB22A84D7D200B33242 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		652524E42A9DD6490052C65D /* ShopPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopPage.swift; sourceTree = "<group>"; };
+		652524E72A9DD7610052C65D /* shopCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shopCollectionViewCell.swift; sourceTree = "<group>"; };
+		652524E92A9DDC1D0052C65D /* productSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productSearch.swift; sourceTree = "<group>"; };
+		652524EB2A9DDE3C0052C65D /* productbuyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productbuyTableViewCell.swift; sourceTree = "<group>"; };
+		652524ED2A9DE1130052C65D /* selectedproductPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectedproductPage.swift; sourceTree = "<group>"; };
+		652524F12A9DEB690052C65D /* menuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuCollectionViewCell.swift; sourceTree = "<group>"; };
+		652524F42A9DEB810052C65D /* MenuPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPage.swift; sourceTree = "<group>"; };
+		655969642A7B98DB00C9F91E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		656BF2D22A8B4E1B00D0E1CF /* homeTableViewCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTableViewCell3.swift; sourceTree = "<group>"; };
+		656BF2D42A8B53E000D0E1CF /* friendReqCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friendReqCollectionViewCell.swift; sourceTree = "<group>"; };
+		656DF2592A7A5B32003A2044 /* forgetPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgetPage.swift; sourceTree = "<group>"; };
+		6578E0622A7A4557009A27BC /* dateOfBirth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateOfBirth.swift; sourceTree = "<group>"; };
+		6578E0642A7A4A67009A27BC /* birthdayPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = birthdayPop.swift; sourceTree = "<group>"; };
+		6578E0662A7A4DAF009A27BC /* genderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genderPage.swift; sourceTree = "<group>"; };
+		65A17D272A8602160009D5F0 /* homeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTableViewCell.swift; sourceTree = "<group>"; };
+		65A2ECCA2A8624AF00697A34 /* storyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyCollectionViewCell.swift; sourceTree = "<group>"; };
+		65A2ECCC2A86333C00697A34 /* storyCollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyCollectionViewCell2.swift; sourceTree = "<group>"; };
+		65B1DE6D2A6CEE540076A401 /* faceBook Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "faceBook Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B1DE702A6CEE540076A401 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65B1DE722A6CEE540076A401 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		65B1DE742A6CEE540076A401 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65B1DE772A6CEE540076A401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65B1DE792A6CEE540076A401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65B1DE7C2A6CEE540076A401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65B1DE7E2A6CEE540076A401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F7C1CF2A8513BE00BBB7FB /* ReelPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelPage.swift; sourceTree = "<group>"; };
+		65F7C1D92A85154C00BBB7FB /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		65F7C1DB2A85169100BBB7FB /* postPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postPop.swift; sourceTree = "<group>"; };
+		65F7C1DD2A851B1400BBB7FB /* postTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postTableViewCell.swift; sourceTree = "<group>"; };
+		65F897F92A99EEB200F3751A /* FriendsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendsPage.swift; path = ../../../../../../Downloads/FriendsPage.swift; sourceTree = "<group>"; };
+		65F897FE2A99F16C00F3751A /* FriendsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPage.swift; sourceTree = "<group>"; };
+		65F897FF2A99F1A400F3751A /* friendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = friendsTableViewCell.swift; sourceTree = "<group>"; };
+		65F898012A99FD8B00F3751A /* yourfriendsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yourfriendsPage.swift; sourceTree = "<group>"; };
+		65F898032A99FFBB00F3751A /* searchfriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchfriendsTableViewCell.swift; sourceTree = "<group>"; };
+		65F898052A9A06C600F3751A /* findFriendsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = findFriendsPage.swift; sourceTree = "<group>"; };
+		65F898072A9A07FE00F3751A /* NotificationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationPage.swift; sourceTree = "<group>"; };
+		65F898082A9A07FE00F3751A /* notificationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationsTableViewCell.swift; sourceTree = "<group>"; };
+		65FB54772A877DC5001793F5 /* homeTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTableViewCell2.swift; sourceTree = "<group>"; };
+		E78F70190FD7454B30818B75 /* Pods-faceBook Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceBook Project.release.xcconfig"; path = "Target Support Files/Pods-faceBook Project/Pods-faceBook Project.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65B1DE6A2A6CEE540076A401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA748434D72637615D699F33 /* Pods_faceBook_Project.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AE277FBFA58F1F2B7FB2D7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53DB3E327C1BD0C44CA10455 /* Pods-faceBook Project.debug.xcconfig */,
+				E78F70190FD7454B30818B75 /* Pods-faceBook Project.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		651FFBB72A84DD0100B33242 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				651FFBB22A84D7D200B33242 /* TabBarController.swift */,
+				65A2ECC72A861FB300697A34 /* homePage */,
+				65F7C1CF2A8513BE00BBB7FB /* ReelPage.swift */,
+				65F897F92A99EEB200F3751A /* FriendsPage.swift */,
+				65F897FD2A99F16000F3751A /* frindsPages */,
+				652524F32A9DEB7A0052C65D /* MenuPage */,
+				652524E62A9DD72A0052C65D /* ShopPage */,
+				65F8980B2A9A080500F3751A /* notificationPage */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		652524E62A9DD72A0052C65D /* ShopPage */ = {
+			isa = PBXGroup;
+			children = (
+				652524E42A9DD6490052C65D /* ShopPage.swift */,
+				652524E92A9DDC1D0052C65D /* productSearch.swift */,
+				652524ED2A9DE1130052C65D /* selectedproductPage.swift */,
+				652524E72A9DD7610052C65D /* shopCollectionViewCell.swift */,
+				652524EB2A9DDE3C0052C65D /* productbuyTableViewCell.swift */,
+			);
+			path = ShopPage;
+			sourceTree = "<group>";
+		};
+		652524F32A9DEB7A0052C65D /* MenuPage */ = {
+			isa = PBXGroup;
+			children = (
+				652524F42A9DEB810052C65D /* MenuPage.swift */,
+				652524F12A9DEB690052C65D /* menuCollectionViewCell.swift */,
+			);
+			path = MenuPage;
+			sourceTree = "<group>";
+		};
+		659A61782A8383D80085669C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				65B1DE742A6CEE540076A401 /* ViewController.swift */,
+				498342882A6EE4F000C6413F /* JoinFacebook.swift */,
+				491A5DAF2A6F8A100005539D /* createAccount.swift */,
+				6578E0622A7A4557009A27BC /* dateOfBirth.swift */,
+				65A2ECC82A861FE600697A34 /* genderPage */,
+				656DF2592A7A5B32003A2044 /* forgetPage.swift */,
+				491A5DC82A7002E90005539D /* mobileNumber.swift */,
+				491A5DCD2A70354F0005539D /* signupWithEmail.swift */,
+				491A5DCF2A70EF3F0005539D /* createPassword.swift */,
+				491A5DD42A7184A40005539D /* saveInfo.swift */,
+				491A5DD62A7188B10005539D /* TermsAndCondition.swift */,
+				497625B02A7AA2EF0002588E /* saveLoginInfoPage.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		65A2ECC72A861FB300697A34 /* homePage */ = {
+			isa = PBXGroup;
+			children = (
+				65F7C1D92A85154C00BBB7FB /* HomePage.swift */,
+				65A17D272A8602160009D5F0 /* homeTableViewCell.swift */,
+				65A2ECCA2A8624AF00697A34 /* storyCollectionViewCell.swift */,
+				65A2ECCC2A86333C00697A34 /* storyCollectionViewCell2.swift */,
+				65FB54772A877DC5001793F5 /* homeTableViewCell2.swift */,
+				656BF2D42A8B53E000D0E1CF /* friendReqCollectionViewCell.swift */,
+				656BF2D22A8B4E1B00D0E1CF /* homeTableViewCell3.swift */,
+				6507D79D2A8CB29900DF2CC0 /* messagerPage.swift */,
+				65FC69B62A8E1CB200E6F310 /* searchPage */,
+			);
+			path = homePage;
+			sourceTree = "<group>";
+		};
+		65A2ECC82A861FE600697A34 /* genderPage */ = {
+			isa = PBXGroup;
+			children = (
+				6578E0662A7A4DAF009A27BC /* genderPage.swift */,
+				6501E41D2A7B66A200CD522B /* genderTableViewCell.swift */,
+			);
+			path = genderPage;
+			sourceTree = "<group>";
+		};
+		65A2ECC92A86202E00697A34 /* postPop */ = {
+			isa = PBXGroup;
+			children = (
+				65F7C1DB2A85169100BBB7FB /* postPop.swift */,
+				65F7C1DD2A851B1400BBB7FB /* postTableViewCell.swift */,
+			);
+			path = postPop;
+			sourceTree = "<group>";
+		};
+		65AD139D2A80EC9500CCE118 /* Comman */ = {
+			isa = PBXGroup;
+			children = (
+				65B1DE702A6CEE540076A401 /* AppDelegate.swift */,
+				65B1DE722A6CEE540076A401 /* SceneDelegate.swift */,
+			);
+			path = Comman;
+			sourceTree = "<group>";
+		};
+		65AD139E2A80ED5100CCE118 /* PopPop */ = {
+			isa = PBXGroup;
+			children = (
+				6578E0642A7A4A67009A27BC /* birthdayPop.swift */,
+				65A2ECC92A86202E00697A34 /* postPop */,
+			);
+			path = PopPop;
+			sourceTree = "<group>";
+		};
+		65B1DE642A6CEE540076A401 = {
+			isa = PBXGroup;
+			children = (
+				65B1DE6F2A6CEE540076A401 /* faceBook Project */,
+				65B1DE6E2A6CEE540076A401 /* Products */,
+				2AE277FBFA58F1F2B7FB2D7E /* Pods */,
+				F6258E4418DE3AB7EC232D40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		65B1DE6E2A6CEE540076A401 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65B1DE6D2A6CEE540076A401 /* faceBook Project.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65B1DE6F2A6CEE540076A401 /* faceBook Project */ = {
+			isa = PBXGroup;
+			children = (
+				65AD139D2A80EC9500CCE118 /* Comman */,
+				65AD139E2A80ED5100CCE118 /* PopPop */,
+				659A61782A8383D80085669C /* ViewController */,
+				651FFBB72A84DD0100B33242 /* TabBar */,
+				65B1DE762A6CEE540076A401 /* Main.storyboard */,
+				65B1DE792A6CEE540076A401 /* Assets.xcassets */,
+				65B1DE7B2A6CEE540076A401 /* LaunchScreen.storyboard */,
+				65B1DE7E2A6CEE540076A401 /* Info.plist */,
+				655969642A7B98DB00C9F91E /* GoogleService-Info.plist */,
+			);
+			path = "faceBook Project";
+			sourceTree = "<group>";
+		};
+		65F897FD2A99F16000F3751A /* frindsPages */ = {
+			isa = PBXGroup;
+			children = (
+				65F897FE2A99F16C00F3751A /* FriendsPage.swift */,
+				65F897FF2A99F1A400F3751A /* friendsTableViewCell.swift */,
+				65F898012A99FD8B00F3751A /* yourfriendsPage.swift */,
+				65F898032A99FFBB00F3751A /* searchfriendsTableViewCell.swift */,
+				65F898052A9A06C600F3751A /* findFriendsPage.swift */,
+			);
+			path = frindsPages;
+			sourceTree = "<group>";
+		};
+		65F8980B2A9A080500F3751A /* notificationPage */ = {
+			isa = PBXGroup;
+			children = (
+				65F898072A9A07FE00F3751A /* NotificationPage.swift */,
+				65F898082A9A07FE00F3751A /* notificationsTableViewCell.swift */,
+			);
+			path = notificationPage;
+			sourceTree = "<group>";
+		};
+		65FC69B62A8E1CB200E6F310 /* searchPage */ = {
+			isa = PBXGroup;
+			children = (
+				6507D79F2A8CBE7F00DF2CC0 /* searchPage.swift */,
+				6507D7A12A8CC44900DF2CC0 /* searchTableViewCell.swift */,
+				6507D7A32A8CD07300DF2CC0 /* searchTableViewCell2.swift */,
+			);
+			path = searchPage;
+			sourceTree = "<group>";
+		};
+		F6258E4418DE3AB7EC232D40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B152393A0F95763874CDA6D /* Pods_faceBook_Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65B1DE6C2A6CEE540076A401 /* faceBook Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B1DE812A6CEE540076A401 /* Build configuration list for PBXNativeTarget "faceBook Project" */;
+			buildPhases = (
+				FF5A8471BDC9B931C80A6253 /* [CP] Check Pods Manifest.lock */,
+				65B1DE692A6CEE540076A401 /* Sources */,
+				65B1DE6A2A6CEE540076A401 /* Frameworks */,
+				65B1DE6B2A6CEE540076A401 /* Resources */,
+				F2C2453DBD7468D30FC3E952 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "faceBook Project";
+			productName = "faceBook Project";
+			productReference = 65B1DE6D2A6CEE540076A401 /* faceBook Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65B1DE652A6CEE540076A401 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					65B1DE6C2A6CEE540076A401 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 65B1DE682A6CEE540076A401 /* Build configuration list for PBXProject "faceBook Project" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65B1DE642A6CEE540076A401;
+			productRefGroup = 65B1DE6E2A6CEE540076A401 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65B1DE6C2A6CEE540076A401 /* faceBook Project */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65B1DE6B2A6CEE540076A401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B1DE7D2A6CEE540076A401 /* LaunchScreen.storyboard in Resources */,
+				655969652A7B98DB00C9F91E /* GoogleService-Info.plist in Resources */,
+				65B1DE7A2A6CEE540076A401 /* Assets.xcassets in Resources */,
+				65B1DE782A6CEE540076A401 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F2C2453DBD7468D30FC3E952 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-faceBook Project/Pods-faceBook Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-faceBook Project/Pods-faceBook Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-faceBook Project/Pods-faceBook Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF5A8471BDC9B931C80A6253 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-faceBook Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65B1DE692A6CEE540076A401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652524E52A9DD6490052C65D /* ShopPage.swift in Sources */,
+				65A2ECCB2A8624AF00697A34 /* storyCollectionViewCell.swift in Sources */,
+				6507D7A22A8CC44900DF2CC0 /* searchTableViewCell.swift in Sources */,
+				6507D79E2A8CB29900DF2CC0 /* messagerPage.swift in Sources */,
+				656BF2D52A8B53E000D0E1CF /* friendReqCollectionViewCell.swift in Sources */,
+				65F898022A99FD8B00F3751A /* yourfriendsPage.swift in Sources */,
+				65F897FA2A99EEB200F3751A /* FriendsPage.swift in Sources */,
+				6501E41E2A7B66A200CD522B /* genderTableViewCell.swift in Sources */,
+				65F7C1DA2A85154D00BBB7FB /* HomePage.swift in Sources */,
+				65A2ECCD2A86333C00697A34 /* storyCollectionViewCell2.swift in Sources */,
+				65F898062A9A06C600F3751A /* findFriendsPage.swift in Sources */,
+				491A5DD72A7188B10005539D /* TermsAndCondition.swift in Sources */,
+				652524EA2A9DDC1D0052C65D /* productSearch.swift in Sources */,
+				6578E0632A7A4557009A27BC /* dateOfBirth.swift in Sources */,
+				65F898002A99F1A400F3751A /* friendsTableViewCell.swift in Sources */,
+				6507D7A42A8CD07300DF2CC0 /* searchTableViewCell2.swift in Sources */,
+				6578E0652A7A4A67009A27BC /* birthdayPop.swift in Sources */,
+				497625B12A7AA2EF0002588E /* saveLoginInfoPage.swift in Sources */,
+				491A5DC92A7002E90005539D /* mobileNumber.swift in Sources */,
+				651FFBB32A84D7D200B33242 /* TabBarController.swift in Sources */,
+				652524EC2A9DDE3C0052C65D /* productbuyTableViewCell.swift in Sources */,
+				65B1DE752A6CEE540076A401 /* ViewController.swift in Sources */,
+				491A5DCE2A70354F0005539D /* signupWithEmail.swift in Sources */,
+				65FB54782A877DC5001793F5 /* homeTableViewCell2.swift in Sources */,
+				491A5DD02A70EF3F0005539D /* createPassword.swift in Sources */,
+				65A17D282A8602160009D5F0 /* homeTableViewCell.swift in Sources */,
+				65F8980A2A9A07FE00F3751A /* notificationsTableViewCell.swift in Sources */,
+				65F898042A99FFBC00F3751A /* searchfriendsTableViewCell.swift in Sources */,
+				491A5DD52A7184A40005539D /* saveInfo.swift in Sources */,
+				65F898092A9A07FE00F3751A /* NotificationPage.swift in Sources */,
+				6507D7A02A8CBE7F00DF2CC0 /* searchPage.swift in Sources */,
+				6578E0672A7A4DAF009A27BC /* genderPage.swift in Sources */,
+				65469D1F2AA0869600FA0F1B /* MenuPage.swift in Sources */,
+				65B1DE712A6CEE540076A401 /* AppDelegate.swift in Sources */,
+				65F7C1D02A8513BE00BBB7FB /* ReelPage.swift in Sources */,
+				491A5DB02A6F8A100005539D /* createAccount.swift in Sources */,
+				652524E82A9DD7610052C65D /* shopCollectionViewCell.swift in Sources */,
+				65B1DE732A6CEE540076A401 /* SceneDelegate.swift in Sources */,
+				65F7C1DC2A85169100BBB7FB /* postPop.swift in Sources */,
+				652524EE2A9DE1130052C65D /* selectedproductPage.swift in Sources */,
+				498342892A6EE4F000C6413F /* JoinFacebook.swift in Sources */,
+				656DF25A2A7A5B32003A2044 /* forgetPage.swift in Sources */,
+				656BF2D32A8B4E1B00D0E1CF /* homeTableViewCell3.swift in Sources */,
+				652524F22A9DEB690052C65D /* menuCollectionViewCell.swift in Sources */,
+				65F7C1DE2A851B1400BBB7FB /* postTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		65B1DE762A6CEE540076A401 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65B1DE772A6CEE540076A401 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65B1DE7B2A6CEE540076A401 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65B1DE7C2A6CEE540076A401 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65B1DE7F2A6CEE540076A401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65B1DE802A6CEE540076A401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65B1DE822A6CEE540076A401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53DB3E327C1BD0C44CA10455 /* Pods-faceBook Project.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 695TV68FU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "faceBook Project/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rnw.faceBook-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65B1DE832A6CEE540076A401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E78F70190FD7454B30818B75 /* Pods-faceBook Project.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 695TV68FU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "faceBook Project/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rnw.faceBook-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65B1DE682A6CEE540076A401 /* Build configuration list for PBXProject "faceBook Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B1DE7F2A6CEE540076A401 /* Debug */,
+				65B1DE802A6CEE540076A401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B1DE812A6CEE540076A401 /* Build configuration list for PBXNativeTarget "faceBook Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B1DE822A6CEE540076A401 /* Debug */,
+				65B1DE832A6CEE540076A401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65B1DE652A6CEE540076A401 /* Project object */;
+}
