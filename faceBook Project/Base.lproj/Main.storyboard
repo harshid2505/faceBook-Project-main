@@ -649,7 +649,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pOq-Ii-whm">
-                                                    <rect key="frame" x="326" y="15.999999999999998" width="26" height="31.999999999999986"/>
+                                                    <rect key="frame" x="326" y="16" width="26" height="31.999999999999986"/>
                                                     <color key="tintColor" systemColor="systemGrayColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="33.329999999999998" id="ITi-ji-8Q5"/>
@@ -1996,9 +1996,8 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mJY-PI-lbl">
                                 <rect key="frame" x="0.0" y="104" width="393" height="665"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zgz-Bp-Z2g">
-                                    <size key="itemSize" width="178" height="225"/>
-                                    <size key="estimatedItemSize" width="190" height="225"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mBk-qL-6F7">
+                                    <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -2036,6 +2035,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="wkA-UP-Sgi" secondAttribute="trailing" constant="8" id="yzD-lU-VVl"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="178" height="225"/>
                                         <connections>
                                             <outlet property="productImg" destination="wkA-UP-Sgi" id="sti-UX-AdZ"/>
@@ -2045,6 +2045,7 @@
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="5gV-cM-qYm" id="c0u-b4-xVu"/>
+                                    <outlet property="delegate" destination="5gV-cM-qYm" id="92B-MR-TDv"/>
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUb-W2-RbG">
@@ -2072,14 +2073,15 @@
                             <constraint firstItem="tFB-9j-XXC" firstAttribute="top" secondItem="Jaf-XD-d6E" secondAttribute="top" id="qpd-Gw-xg0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="shop" id="Jke-1c-EYR"/>
+                    <tabBarItem key="tabBarItem" title="" image="shop" id="j5j-Ie-ApJ"/>
+                    <navigationItem key="navigationItem" id="19y-vE-zur"/>
                     <connections>
                         <outlet property="productshopCollectionViewCell" destination="mJY-PI-lbl" id="kX1-OI-a9D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tkw-pK-IZk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7185.4961832061063" y="1968.3098591549297"/>
+            <point key="canvasLocation" x="7184" y="1968"/>
         </scene>
         <!--Product Search-->
         <scene sceneID="4Sy-e4-riC">
@@ -2180,7 +2182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxx-pX-Pi5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7861.8320610687024" y="1967.605633802817"/>
+            <point key="canvasLocation" x="7862" y="1968"/>
         </scene>
         <!--Selectedproduct Page-->
         <scene sceneID="e5f-vO-4ox">
@@ -2396,7 +2398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Mj-5i-q2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8559.5419847328249" y="1967.605633802817"/>
+            <point key="canvasLocation" x="8560" y="1968"/>
         </scene>
         <!--Notification Page-->
         <scene sceneID="zdj-Yj-MYQ">
@@ -3649,6 +3651,7 @@
         <scene sceneID="59h-xL-ppP">
             <objects>
                 <tabBarController storyboardIdentifier="TabBarController" id="JfA-0D-XoG" customClass="TabBarController" customModule="faceBook_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Cw5-El-mO1"/>
                     <tabBar key="tabBar" tag="-1" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hAx-MP-myh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -3657,7 +3660,7 @@
                     <connections>
                         <segue destination="1N9-eo-9Kc" kind="relationship" relationship="viewControllers" id="axX-0X-48R"/>
                         <segue destination="5rO-Bw-rWA" kind="relationship" relationship="viewControllers" id="4vc-Qy-acF"/>
-                        <segue destination="5gV-cM-qYm" kind="relationship" relationship="viewControllers" id="nw7-oc-hb9"/>
+                        <segue destination="5gV-cM-qYm" kind="relationship" relationship="viewControllers" id="Qsc-Hx-EnN"/>
                         <segue destination="Vhp-hT-oom" kind="relationship" relationship="viewControllers" id="aQC-du-RJ7"/>
                         <segue destination="UZB-cv-lJS" kind="relationship" relationship="viewControllers" id="2oo-h9-mVk"/>
                     </connections>

@@ -30,16 +30,20 @@ class ShopPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
         let navigatiion = storyboard?.instantiateViewController(identifier: "productSearch") as! productSearch
         navigationController?.pushViewController(navigatiion, animated: true)
     }
+    
     func navigation(name:String,photo:UIImage){
-        let navigate = storyboard?.instantiateViewController(withIdentifier: "selectedproductPage") as! selectedproductPage
-        navigate.a = name
-        navigate.b = photo
-        navigationController?.pushViewController(navigate, animated: true)
+//        let navigate = storyboard?.instantiateViewController(withIdentifier: "selectedproductPage") as! selectedproductPage
+//        navigate.a = name
+//        navigate.b = photo
+//        navigationController?.pushViewController(navigate, animated: true)
 
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        navigation( name: name[indexPath.row], photo: photo[indexPath.row]!)
+        let navigate = storyboard?.instantiateViewController(withIdentifier: "selectedproductPage") as! selectedproductPage
+        navigate.a = name[indexPath.row]
+        navigate.b = photo[indexPath.row]!
+        navigationController?.pushViewController(navigate, animated: true)
     }
 }
 
