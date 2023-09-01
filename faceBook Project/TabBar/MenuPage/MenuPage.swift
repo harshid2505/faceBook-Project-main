@@ -19,6 +19,10 @@ class MenuPage: UIViewController {
 //        let navigation = storyboard?.instantiateViewController(identifier: "accountPage") as! accountPage
 //        navigationController?.pushViewController(navigation, animated: true)
 //    }
+    @IBAction func logoutbuttonAction(_ sender: Any) {
+        let navigation =  storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+        navigationController?.pushViewController(navigation, animated: true)
+    }
 }
 
 extension MenuPage : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
@@ -33,8 +37,8 @@ extension MenuPage : UICollectionViewDelegate,UICollectionViewDataSource,UIColle
         cell.layer.cornerRadius = 10
         cell.layer.masksToBounds = false
         cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowOpacity = 0.3
-        cell.layer.shadowOffset = CGSize(width: 0, height: 0.5)
+        cell.layer.shadowOpacity = 0.5
+        cell.layer.shadowOffset = CGSize(width: 1, height: 1.5)
         cell.layer.shadowRadius = 3
         return cell
     }
