@@ -20,10 +20,10 @@ class selectedproductPage: UIViewController {
         let navigatiion = storyboard?.instantiateViewController(identifier: "productSearch") as! productSearch
         navigationController?.pushViewController(navigatiion, animated: true)
     }
-//    @IBAction func moreButtonAction(_ sender: Any) {
-//        let navigatiion = storyboard?.instantiateViewController(identifier: "morepopUp") as! morepopUp
-//        navigationController?.present(navigatiion, animated: true)
-//    }
+    @IBAction func moreButtonAction(_ sender: Any) {
+        let navigatiion = storyboard?.instantiateViewController(identifier: "morepopUp") as! morepopUp
+        navigationController?.present(navigatiion, animated: true)
+    }
 
 }
 
