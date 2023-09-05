@@ -13,7 +13,15 @@ class NotificationPage: UIViewController {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
     }
+    
+    @IBAction func serchButtonAction(_ sender: UIButton) {
+        let navigate = storyboard?.instantiateViewController(identifier: "findFriendsPage") as! findFriendsPage
+        navigationController?.pushViewController(navigate, animated: true)
+    }
+    
 }
+
+// TABLE VIEW
 
 extension NotificationPage : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

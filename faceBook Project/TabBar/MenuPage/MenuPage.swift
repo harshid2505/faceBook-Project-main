@@ -6,6 +6,7 @@ class MenuPage: UIViewController {
     @IBOutlet weak var menuCv: UICollectionView!
     @IBOutlet weak var seeMorebutton: UIButton!
     @IBOutlet weak var logOutButton: UIButton!
+    
     var photo = [UIImage(named: "back-in-time"),UIImage(named: "save-instagram"),UIImage(named: "multiple-users-silhouette"),UIImage(named: "youtube"),UIImage(named: "store (1)"),UIImage(named: "friends (2)"),UIImage(named: "web-content"),UIImage(named: "calendar")]
     var name = ["Memories","Saved","Groups","Video","Marketplace","Friends","Feeds","Events"]
     override func viewDidLoad() {
@@ -19,11 +20,14 @@ class MenuPage: UIViewController {
 //        let navigation = storyboard?.instantiateViewController(identifier: "accountPage") as! accountPage
 //        navigationController?.pushViewController(navigation, animated: true)
 //    }
+    
     @IBAction func logoutbuttonAction(_ sender: Any) {
         let navigation =  storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
         navigationController?.pushViewController(navigation, animated: true)
     }
 }
+
+// COLLECTION VIEW
 
 extension MenuPage : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -43,8 +47,6 @@ extension MenuPage : UICollectionViewDelegate,UICollectionViewDataSource,UIColle
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 175
-, height: 73)
+        return CGSize(width: 175, height: 73)
     }
-    
 }

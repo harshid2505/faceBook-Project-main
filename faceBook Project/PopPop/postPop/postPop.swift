@@ -13,6 +13,7 @@ class postPop: UIViewController {
     @IBOutlet weak var postTableView: UITableView!
     
     var object: ((IndexPath)->())?
+    var object2: ((IndexPath)->())?
     
     var photo = [UIImage(named: "post"),UIImage(named: "story"),UIImage(named: "reel"),UIImage(named: "live")]
     var name = ["Post","Story","Reel","Live"]
@@ -58,7 +59,13 @@ extension postPop:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        object!(IndexPath())
+        if indexPath.row == 0{
+            object!(IndexPath())
+        }
+        else{
+            object2!(IndexPath())
+        }
+        
     }
     
 }

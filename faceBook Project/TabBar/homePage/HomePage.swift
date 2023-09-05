@@ -6,16 +6,28 @@
 //
 
 import UIKit
-import StoreKit
+import FirebaseStorage
+import FirebaseDatabase
+import FirebaseFirestore
+import FirebaseAuth
+import SDWebImage
 
 struct LikeShareCount{
     var like: String
     var share: String
 }
 
+struct Data{
+    var userPost: String
+}
+
 class HomePage: UIViewController {
     
     @IBOutlet weak var homeTableView: UITableView!
+    
+    var arr = [Data]()
+    var collRef: CollectionReference!
+    var ref = Database.database().reference()
     
     var dp = [UIImage(named: ""),UIImage(named: "dp"),UIImage(named: "harshid"),UIImage(named: "dharuDP"),UIImage(named: "monilDP"),UIImage(named: "jenishDP"),UIImage(named: ""),UIImage(named: "hashuDP"),UIImage(named: "harshDP"),UIImage(named: "jonathnDP"),UIImage(named: "khantilDP"),UIImage(named: "vivekDP")]
     
@@ -29,8 +41,7 @@ class HomePage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        getData()
     }
     
     func showAlert(a: IndexPath){
@@ -43,9 +54,27 @@ class HomePage: UIViewController {
         present(alert, animated: true,completion: nil)
     }
     
+    func navigation(a: IndexPath){
+        let navigate = storyboard?.instantiateViewController(identifier: "postPage") as! postPage
+        navigationController?.pushViewController(navigate, animated: true)
+    }
+    
+    func getData(){
+        collRef = Firestore.firestore().collection("Post")
+        collRef.addSnapshotListener { [self] documentSnapshot, error in
+            if error == nil{
+                arr = documentSnapshot!.documents.map({ document in
+                    return Data(userPost: document["Post"] as! String)
+                })
+                homeTableView.reloadData()
+            }
+        }
+    }
+    
     @IBAction func postButtonAction(_ sender: UIButton) {
         let navigate = storyboard?.instantiateViewController(identifier: "postPop") as! postPop
-        navigate.object = showAlert
+        navigate.object = navigation
+        navigate.object2 = showAlert
         
         present(navigate, animated: true)
     }
@@ -73,7 +102,7 @@ extension HomePage:UITableViewDelegate,UITableViewDataSource{
         
         if indexPath.row == 0{
             let cell = homeTableView.dequeueReusableCell(withIdentifier: "homeCell") as! homeTableViewCell
-            cell.object = showAlert
+            cell.object = navigation
             
             return cell
         }
@@ -89,6 +118,7 @@ extension HomePage:UITableViewDelegate,UITableViewDataSource{
             cell2.nameLable.text = name[indexPath.row]
             cell2.lable.text = name2[indexPath.row]
             cell2.postImageView.image = post[indexPath.row]
+            //            cell2.postImageView.sd_setImage(with: URL(string: arr[indexPath.row].userPost))
             cell2.likeCountLable.text = like[indexPath.row].like
             cell2.shareCountLable.text = like[indexPath.row].share
             cell2.dpImageView.layer.cornerRadius = cell2.dpImageView.frame.width/2
