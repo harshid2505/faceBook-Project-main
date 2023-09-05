@@ -24,6 +24,6 @@ class selectedproductPage: UIViewController {
         let navigatiion = storyboard?.instantiateViewController(identifier: "morepopUp") as! morepopUp
         navigationController?.present(navigatiion, animated: true)
     }
-
+    
 }
 

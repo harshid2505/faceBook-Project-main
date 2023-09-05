@@ -11,4 +11,5 @@ pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'FirebaseFirestore'
 pod 'LZViewPager'
+pod 'GoogleSignIn'
 end

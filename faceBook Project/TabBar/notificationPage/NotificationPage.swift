@@ -1,7 +1,7 @@
 import UIKit
 
 class NotificationPage: UIViewController {
-
+    
     @IBOutlet weak var notificationTb: UITableView!
     
     var notifications = ["Jenis Navadiya was tagged in a post.","Muniram Lace added story. ","Harshid Vaddoriya posted Jenis Navadiya's memory.","you have a new friend suggestion : Monil Sojitra.","yagnik Kalathiya added a post.","Jeet Rakholiya posted in Entertainment club.","Rushit Maniya posted a photo.","Jeel Maniya was tagged in a post.","Niraj Nakarani posted a memory.","yagnik kalathiya posted Jenis Navadiya's memory.","you have a new friend suggestion : Rushit Navadiya."]

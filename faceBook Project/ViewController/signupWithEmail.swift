@@ -43,7 +43,7 @@ class signupWithEmail: UIViewController {
         alert.addAction(UIAlertAction(title: "Cancel", style: .destructive))
         present(alert, animated: true)
     }
-
+    
     
     @IBAction func backButtonAction(_ sender: Any) {
         backButtonNavigation()

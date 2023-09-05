@@ -1,7 +1,7 @@
 import UIKit
 
-class MenuPage: UIViewController {
-
+class MenuPage: UIViewController{
+    
     @IBOutlet weak var dp: UIImageView!
     @IBOutlet weak var menuCv: UICollectionView!
     @IBOutlet weak var seeMorebutton: UIButton!
@@ -14,15 +14,20 @@ class MenuPage: UIViewController {
         seeMorebutton.layer.cornerRadius = 5
         logOutButton.layer.cornerRadius = 5
     }
-    
-//    @IBAction func accountButtonAction(_ sender: Any) {
-//        let navigation = storyboard?.instantiateViewController(identifier: "accountPage") as! accountPage
-//        navigationController?.pushViewController(navigation, animated: true)
-//    }
-    @IBAction func logoutbuttonAction(_ sender: Any) {
-        let navigation =  storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
-        navigationController?.pushViewController(navigation, animated: true)
+
+    @IBAction func logoutbuttonAction(_ sender: UIButton) {
+        if let navigationController = self.navigationController {
+            for viewController in navigationController.viewControllers {
+                if viewController is ViewController {
+                    navigationController.popToViewController(viewController, animated: true)
+                    break
+                }
+            }
+        }
+        //        let navigation =  storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+        //        navigationController?.pushViewController(navigation, animated: true)
     }
+    
 }
 
 extension MenuPage : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
@@ -44,7 +49,7 @@ extension MenuPage : UICollectionViewDelegate,UICollectionViewDataSource,UIColle
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 175
-, height: 73)
+                      , height: 73)
     }
     
 }

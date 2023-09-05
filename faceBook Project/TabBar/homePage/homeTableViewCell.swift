@@ -1,10 +1,3 @@
-//
-//  homeTableViewCell.swift
-//  Pods
-//
-//  Created by HARSHID PATEL on 11/08/23.
-//
-
 import UIKit
 
 class homeTableViewCell: UITableViewCell {

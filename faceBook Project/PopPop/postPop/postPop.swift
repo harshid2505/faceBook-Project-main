@@ -1,14 +1,7 @@
-//
-//  postPop.swift
-//  faceBook Project
-//
-//  Created by HARSHID PATEL on 10/08/23.
-//
-
 import UIKit
 
 class postPop: UIViewController {
-
+    
     @IBOutlet weak var popPop: UIView!
     @IBOutlet weak var postTableView: UITableView!
     
@@ -31,7 +24,7 @@ class postPop: UIViewController {
             self.view.alpha = 1
         }
     }
-
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         dismiss(animated: false)
     }

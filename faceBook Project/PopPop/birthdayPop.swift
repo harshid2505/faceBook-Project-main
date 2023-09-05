@@ -1,10 +1,3 @@
-//
-//  birthdayPop.swift
-//  faceBook Project
-//
-//  Created by HARSHID PATEL on 25/07/23.
-//
-
 import UIKit
 
 class birthdayPop: UIViewController {
@@ -13,8 +6,7 @@ class birthdayPop: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
         view.alpha = 0
         popView.layer.cornerRadius = 15
     }

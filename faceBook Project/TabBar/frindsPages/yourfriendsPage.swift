@@ -7,7 +7,7 @@ struct Model1 {
 }
 
 class yourfriendsPage: UIViewController, UISearchBarDelegate {
-
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var yourfriendsTableview: UITableView!
     
@@ -19,9 +19,9 @@ class yourfriendsPage: UIViewController, UISearchBarDelegate {
         super.viewDidLoad()
         searchBar.layer.cornerRadius = 15
         searchBar.delegate = self
-          yourfriendsTableview.reloadData()
+        yourfriendsTableview.reloadData()
     }
-
+    
     @IBAction func backbuttonActiion(_ sender: Any) {
         let navigatiion = storyboard?.instantiateViewController(identifier: "FriendsPage") as! FriendsPage
         navigationController?.popViewController(animated: true)

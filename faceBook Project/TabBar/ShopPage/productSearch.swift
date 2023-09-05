@@ -1,7 +1,7 @@
 import UIKit
 
 class productSearch: UIViewController {
-
+    
     @IBOutlet weak var pdSearchTxt: UITextField!
     
     @IBOutlet weak var categoriesTableView: UITableView!

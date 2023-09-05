@@ -1,10 +1,3 @@
-//
-//  searchPage.swift
-//  faceBook Project
-//
-//  Created by HARSHID PATEL on 16/08/23.
-//
-
 import UIKit
 
 struct Model{
@@ -20,10 +13,10 @@ class searchPage: UIViewController {
     var dpArr = [Model(dp: UIImage(named: "1")!, name: "Ashish Gondaliya"),Model(dp: UIImage(named: "2")!, name: "Rajesh Sakriya"),Model(dp: UIImage(named: "3")!, name: "Boghani Dhara"),Model(dp: UIImage(named: "4")!, name: "Gautam Baldha"),Model(dp: UIImage(named: "5")!, name: "Keval Patel"),Model(dp: UIImage(named: "6")!, name: "Thummar Abhi"),Model(dp: UIImage(named: "7")!, name: "Vishwas Mehta"),Model(dp: UIImage(named: "8")!, name: "Kailash Keer"),Model(dp: UIImage(named: "9")!, name: "VD Patel"),Model(dp: UIImage(named: "10")!, name: "Kaushik Makvana")]
     
     var dpArr2 = [Model(dp: UIImage(named: "1")!, name: "Ashish Gondaliya"),Model(dp: UIImage(named: "2")!, name: "Rajesh Sakriya"),Model(dp: UIImage(named: "3")!, name: "Boghani Dhara"),Model(dp: UIImage(named: "4")!, name: "Gautam Baldha"),Model(dp: UIImage(named: "5")!, name: "Keval Patel"),Model(dp: UIImage(named: "6")!, name: "Thummar Abhi"),Model(dp: UIImage(named: "7")!, name: "Vishwas Mehta"),Model(dp: UIImage(named: "8")!, name: "Kailash Keer"),Model(dp: UIImage(named: "9")!, name: "VD Patel"),Model(dp: UIImage(named: "10")!, name: "Kaushik Makvana")]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -42,16 +35,16 @@ extension searchPage: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = searchTableView.dequeueReusableCell(withIdentifier: "searchCell") as! searchTableViewCell
-            cell.dpImage.layer.cornerRadius = cell.dpImage.frame.width/2
-            cell.dpImage.image = dpArr[indexPath.row].dp
-            cell.nameLable.text = dpArr[indexPath.row].name
-            
-            return cell
+        let cell = searchTableView.dequeueReusableCell(withIdentifier: "searchCell") as! searchTableViewCell
+        cell.dpImage.layer.cornerRadius = cell.dpImage.frame.width/2
+        cell.dpImage.image = dpArr[indexPath.row].dp
+        cell.nameLable.text = dpArr[indexPath.row].name
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 70
+        return 70
     }
     
 }

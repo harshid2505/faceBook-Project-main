@@ -10,6 +10,8 @@ import FirebaseAuth
 import FirebaseDatabase
 import FirebaseFirestore
 import FirebaseCore
+import Firebase
+import GoogleSignIn
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -20,6 +22,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        if Auth.auth().currentUser != nil {
+//            print(",,,,",Auth.auth().currentUser?.email as Any)
+            let a = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabBarController")
+            window?.rootViewController = a
+        }
+        else {
+            let a = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewController")
+            window?.rootViewController = a
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

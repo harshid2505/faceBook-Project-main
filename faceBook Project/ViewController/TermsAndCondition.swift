@@ -6,7 +6,7 @@ class TermsAndCondition: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setiAgreeButton()
-   }
+    }
     func setiAgreeButton(){
         iAgreeButton.layer.cornerRadius = 20
     }
