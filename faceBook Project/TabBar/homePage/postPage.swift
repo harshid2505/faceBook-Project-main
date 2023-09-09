@@ -22,6 +22,7 @@ class postPage: UIViewController {
     var arrPost = ""
     let userUid = Auth.auth().currentUser!.uid
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         buttonSet()
@@ -70,10 +71,11 @@ class postPage: UIViewController {
     func saveImage(profileImageUrl:URL,complition:@escaping((_ url:URL?)->())){
         let userUid = Auth.auth().currentUser!.uid
         
-       self.fir.collection("User").document(userUid).parent.addDocument(data: ["Post":profileImageUrl.absoluteString])
+        self.fir.collection("Posts").document().parent.addDocument(data: ["Post":profileImageUrl.absoluteString])
     }
     
     func saveFirData() {
+        
         self.uploadPost(imageForUpload.image!) { url in
             self.saveImage(profileImageUrl: url!) { success in
                 if success != nil{
@@ -89,7 +91,7 @@ class postPage: UIViewController {
     }
     
     @IBAction func postButtonAction(_ sender: UIButton) {
-        let navigate = storyboard?.instantiateViewController(identifier: "HomePage") as! HomePage
+        let navigate = storyboard?.instantiateViewController(identifier: "example") as! example
         navigationController?.pushViewController(navigate, animated: true)
         saveFirData()
     }

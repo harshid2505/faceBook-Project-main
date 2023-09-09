@@ -41,7 +41,7 @@ class HomePage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getData()
+//        getData()
     }
     
     func showAlert(a: IndexPath){
