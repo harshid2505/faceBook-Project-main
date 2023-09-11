@@ -61,9 +61,11 @@ extension postPop:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0{
             object!(IndexPath())
+            dismiss(animated: true)
         }
         else{
             object2!(IndexPath())
+            dismiss(animated: true)
         }
         
     }

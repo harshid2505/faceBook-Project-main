@@ -7,7 +7,7 @@ class FriendsPage: UIViewController {
     @IBOutlet weak var searchButton: UIButton!
     var name = ["jenis Navadiya","harshid Vaddoriya","yagnik Kalathiya","Monil Sojitra","vicky Katariya","Niraj Nakarani","Harsh Rathod","Ruhsit Navadiya","Akhil Navadiya","Rushit Maniya","Deep Mangukiya"]
     var mutualFreinds = ["2 mutual friends","1 mutual friends","5 mutual friends","7 mutual friends","12 mutual friends","10 mutual friends","4 mutual friends","11 mutual friends","5 mutual friends","2 mutual friends","6 mutual friends"]
-    var frdDp = [UIImage(named: "jenis"),UIImage(named: "harshid"),UIImage(named: "yagnik"),UIImage(named: "monil"),UIImage(named: "vivek"),UIImage(named: "niraj"),UIImage(named: "harsh"),UIImage(named: "rushit n"),UIImage(named: "akhil"),UIImage(named: "rushit m"),UIImage(named: "deep")]
+    var frdDp = [UIImage(named: "jenishDP"),UIImage(named: "harshid"),UIImage(named: "yagnik"),UIImage(named: "monil"),UIImage(named: "vivekDP"),UIImage(named: "niraj"),UIImage(named: "harsh"),UIImage(named: "rushit n"),UIImage(named: "akhil"),UIImage(named: "rushit m"),UIImage(named: "deep")]
     override func viewDidLoad() {
         super.viewDidLoad()
         setbutton()

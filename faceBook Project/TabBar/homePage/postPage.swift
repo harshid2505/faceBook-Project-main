@@ -91,8 +91,8 @@ class postPage: UIViewController {
     }
     
     @IBAction func postButtonAction(_ sender: UIButton) {
-        let navigate = storyboard?.instantiateViewController(identifier: "example") as! example
-        navigationController?.pushViewController(navigate, animated: true)
+        let navigate = storyboard?.instantiateViewController(identifier: "HomePage") as! HomePage
+        navigationController?.popViewController(animated: true)
         saveFirData()
     }
     

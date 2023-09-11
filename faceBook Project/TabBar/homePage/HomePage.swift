@@ -41,7 +41,7 @@ class HomePage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        getData()
+        getData()
     }
     
     func showAlert(a: IndexPath){
@@ -60,7 +60,7 @@ class HomePage: UIViewController {
     }
     
     func getData(){
-        collRef = Firestore.firestore().collection("Post")
+        collRef = Firestore.firestore().collection("Posts")
         collRef.addSnapshotListener { [self] documentSnapshot, error in
             if error == nil{
                 arr = documentSnapshot!.documents.map({ document in
@@ -94,8 +94,13 @@ class HomePage: UIViewController {
 //TABLE VIEW
 
 extension HomePage:UITableViewDelegate,UITableViewDataSource{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dp.count
+        return arr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -106,21 +111,22 @@ extension HomePage:UITableViewDelegate,UITableViewDataSource{
             
             return cell
         }
-        else if indexPath.row == 6{
+        else if indexPath.row == 3{
             let cell3 = homeTableView.dequeueReusableCell(withIdentifier: "homeCell3") as! homeTableViewCell3
             cell3.layer.backgroundColor = UIColor.black.cgColor
             
             return cell3
         }
+        
         else{
             let cell2 = homeTableView.dequeueReusableCell(withIdentifier: "homeCell2") as! homeTableViewCell2
-            cell2.dpImageView.image = dp[indexPath.row]
-            cell2.nameLable.text = name[indexPath.row]
-            cell2.lable.text = name2[indexPath.row]
-            cell2.postImageView.image = post[indexPath.row]
-            //            cell2.postImageView.sd_setImage(with: URL(string: arr[indexPath.row].userPost))
-            cell2.likeCountLable.text = like[indexPath.row].like
-            cell2.shareCountLable.text = like[indexPath.row].share
+            //            cell2.dpImageView.image = dp[indexPath.row]
+            //            cell2.nameLable.text = name[indexPath.row]
+            //            cell2.lable.text = name2[indexPath.row]
+            //            cell2.postImageView.image = post[indexPath.row]
+            cell2.postImageView.sd_setImage(with: URL(string: arr[indexPath.row].userPost))
+            //            cell2.likeCountLable.text = like[indexPath.row].like
+            //            cell2.shareCountLable.text = like[indexPath.row].share
             cell2.dpImageView.layer.cornerRadius = cell2.dpImageView.frame.width/2
             
             return cell2
@@ -131,10 +137,10 @@ extension HomePage:UITableViewDelegate,UITableViewDataSource{
         if indexPath.row == 0{
             return 260
         }
-        else if indexPath.row == 6{
+        else if indexPath.row == 3{
             return 480
         }
-        else{
+        else {
             return 510
         }
     }
